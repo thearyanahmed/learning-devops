@@ -26,7 +26,7 @@ we want it to be available on port `3344`. That would translate to `-p 3344:8000
 - While building docker images, it will cache the layers and will be used next time when we are rebuilding, if a layer was unchanged, docker will take it from the cache and build only the new / changed layers. Saving us tons of time.
 - To stop a container, run `docker stop $containerIdOrName`. Full id is not necessary, first 2-3 letters that is unique is more than enough.
 
-#### Running nginx on docker
+### Running nginx on docker
 
 ##### Files 
 - [Dockerfile](https://github.com/thearyanahmed/learning-docker/tree/master/class_02/Dockerfile) 
