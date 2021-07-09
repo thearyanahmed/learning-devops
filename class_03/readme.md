@@ -28,7 +28,7 @@ external service will communicate with the internal service. The internal servic
 - [Internal Service ](https://github.com/thearyanahmed/learning-docker/tree/master/class_03/internal) 
 
 #### Architecture
-![Service to Service Architecture](service_to_services_communication_architecture.HEIC?raw=true "Service to Service Architecture")
+![Service to Service Architecture](service_to_services_communication_architecture.png?raw=true "Service to Service Architecture")
 
 
 #### CIDR
