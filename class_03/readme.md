@@ -17,15 +17,19 @@ port `8080` to `172.13.0.3:80`. So our packet will go to `172.13.0.3:80` AKA to 
 - `L2`'s IP range is `(2 ^ (32 - 16)) - 1`. Which is around `65535` . 1 IP will be allocated to gateway.  
 - Host `0.0.0.0`  or `127.0.0.1` means it will bind that specific interface. For example, for `127.0.0.1` it will use the loopback interface with that IP. 
 - Socket is technically port to process mapping. For example, if we are running a node process on port 8080 with a process id of 1234 and a request comes to that interfaces with a destination port of 8080, the request will be sent to 1234 process. 
-- 
 
-#### Service we will create 
+
+#### Services
 
 We'll have two node js services. One of them is internal and another of them is external. We will only expose the external service to the public world.
 external service will communicate with the internal service. The internal service will not be acciessable from the outer world.
 
 - [External Service ](https://github.com/thearyanahmed/learning-docker/tree/master/class_03/external) 
 - [Internal Service ](https://github.com/thearyanahmed/learning-docker/tree/master/class_03/internal) 
+
+#### Architecture
+![Service to Service Architecture](service_to_services_communication_architecture.HEIC?raw=true "Service to Service Architecture")
+
 
 #### CIDR
 Coming soon
