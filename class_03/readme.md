@@ -20,7 +20,6 @@ port `8080` to `172.13.0.3:80`. So our packet will go to `172.13.0.3:80` AKA to 
 
 
 #### Services
-
 We'll have two node js services. One of them is internal and another of them is external. We will only expose the external service to the public world.
 external service will communicate with the internal service. The internal service will not be acciessable from the outer world.
 
@@ -28,7 +27,7 @@ external service will communicate with the internal service. The internal servic
 - [Internal Service ](https://github.com/thearyanahmed/learning-docker/tree/master/class_03/internal) 
 
 #### Architecture
-![Service to Service Architecture](images/service_to_services_communication_architecture.png?raw=true "Service to Service Architecture")
+![Service to Service Architecture](images/service_to_service_communication_architecture.png?raw=true "Service to Service Architecture")
 
 
 #### CIDR

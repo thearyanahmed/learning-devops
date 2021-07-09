@@ -1,5 +1,6 @@
 'use strict'
 
+const { response } = require('express')
 const express = require('express')
 
 // Constants
@@ -10,12 +11,12 @@ const HOST = '0.0.0.0'
 const app = express()
 
 app.get('/', (request, response) => {
-  response.send('Internal server World')
+  response.send('Internal server')
 })
 
 app.get('/api/v1/internal', (request, response) => {
-  response.send('Internal server World')
+  response.send('Some data from internal server World')
 })
 
 app.listen(PORT, HOST)
-console.log(`Running on http://${HOST}:${PORT}`)
+console.log(`Internal service running on http://${HOST}:${PORT}`)

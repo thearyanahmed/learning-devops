@@ -36,6 +36,7 @@ app.get('/api/v1/add',async (request,response)=>{
     // send the response to the public internet
     response.send(exrternalServiceResponse)
   } catch(err){
+    // handle the error and send response
     const errResponse = {
       msg: 'got error'
     }
@@ -47,4 +48,4 @@ app.get('/api/v1/add',async (request,response)=>{
 // finally, setup port & host and start listening using express
 app.listen(PORT, HOST)
 
-console.log(`Running on http://${HOST}:${PORT}`)
+console.log(`External service running on http://${HOST}:${PORT}`)
