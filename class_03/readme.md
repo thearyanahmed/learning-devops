@@ -22,19 +22,19 @@ port `8080` to `172.13.0.3:80`. So our packet will go to `172.13.0.3:80` AKA to 
 #### Service we will create 
 
 We'll have two node js services. One of them is internal and another of them is external. We will only expose the external service to the public world.
-external service will 
+external service will communicate with the internal service. The internal service will not be acciessable from the outer world.
+
+- [External Service ](https://github.com/thearyanahmed/learning-docker/tree/master/class_03/external) 
+- [Internal Service ](https://github.com/thearyanahmed/learning-docker/tree/master/class_03/internal) 
 
 #### CIDR
+Coming soon
 #### DHCP
+Coming soon
 ##### Calculation 
+Coming soon
 ##### Network 
-
-#### 
-
-##### Files 
-- [Dockerfile](https://github.com/thearyanahmed/learning-docker/tree/master/class_02/Dockerfile) 
-- [index.html](https://github.com/thearyanahmed/learning-docker/tree/master/class_02/index.html)
-
+Coming soon
 
 
 
