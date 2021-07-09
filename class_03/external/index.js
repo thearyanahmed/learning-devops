@@ -21,12 +21,12 @@ app.get('/', (request,response) => {
 
 app.get('/api/v1/add',async (request,response)=>{
 
-  console.log('requesting ', internalURL)
+  console.info('requesting ', internalURL)
+  console.warn('make sure the internal URL is correct. If incorrect, change the "internalURL" variable and restart the container')
 
   try{
     // request to the internal service 
     const internalServiceResponse = await axios.get(internalURL)
-    console.log(internalServiceResponse.data)
     
     const exrternalServiceResponse = {
       msg: 'request success',
@@ -36,7 +36,10 @@ app.get('/api/v1/add',async (request,response)=>{
     // send the response to the public internet
     response.send(exrternalServiceResponse)
   } catch(err){
-    console.log('got error')
+    const errResponse = {
+      msg: 'got error'
+    }
+    response.send(errResponse)
     // console.log(err)
   }
 })
