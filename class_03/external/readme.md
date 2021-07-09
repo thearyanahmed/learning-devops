@@ -1,0 +1,1 @@
+docker run -p 8081:8081 -v $(pwd)/:/usr/src/app c3:external
